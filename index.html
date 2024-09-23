@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <h1>Student Registration System</h1>
+        <p>Enter student details below.</p>
+    </header>
+    <main>
+        <form id="registrationForm">
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" name="studentName" required>
+            <br>
+            <label for="studentId">Student ID:</label>
+            <input type="text" id="studentId" name="studentId" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="contactNo">Contact No:</label>
+            <input type="text" id="contactNo" name="contactNo" required>
+            <br>
+            <div class="submit-button">
+                <button type="submit" id="submit">Register</button>
+            </div>
+        </form>
+        <div id="editForm" style="display: none;"> <h2>Edit Student</h2>
+            <form>
+              <label for="editName">Name:</label>
+              <input type="text" id="editName" name="editName" required>
+              <br>
+              <label for="editId">ID:</label>
+              <input type="text" id="editId" name="editId" disabled> <br>
+              <label for="editEmail">Email:</label>
+              <input type="email" id="editEmail" name="editEmail" required>
+              <br>
+              <label for="editContactNo">Contact No:</label>
+              <input type="text" id="editContactNo" name="editContactNo" required>
+              <br>
+              <button type="submit">Save Changes</button>
+            </form>
+          </div>
+        <div id="registeredStudents"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
